@@ -1,0 +1,349 @@
+* {margin: 0; padding: 0; box-sizing: border-box;} /* รีเซ็ตระยะห่าง */
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: 'THSarabunNew', sans-serif;
+  background-color: #edf1ea;
+  /* background-image: linear-gradient(120deg, #cfdfc3, #fff); */
+  height: 100vh;
+}
+input {font-family: 'THSarabunNew', sans-serif;}
+
+
+/*--------------- dropdow-menu ----------------*/
+
+
+
+/*++++++++++++++++ page-login ++++++++++++++++++*/
+.center .logo{
+  width: 9.375rem;
+  height: 9.375rem; 
+  margin: 0 auto; 
+  padding: 0; 
+  background-image: url("../../img/web/ourherb150.png") ;
+  position: relative;
+  transform: translate(0%, 10%); 
+}
+.center h1 {
+  width: 100%;
+  margin: 1rem auto;                  
+  font-size: 2.5rem;
+  text-align: center;
+  color: #265203;
+}    
+.center {
+  width: 30rem;
+  height: 32.5rem;
+  margin: 5rem auto;
+  border-radius: 5px;
+  background: #ccd4c5;
+  border-radius: 1rem;
+  box-shadow: 0 0.1rem 1rem #8b8787;  /* X Y Shodow color*/ 
+}
+.center .text_field input {
+  width: 20rem;
+  height: 3rem;
+  padding: .7rem .8rem;                /*ในกรอบ input*/
+  margin: 0.5rem 5rem;
+  border: 1px solid #ccc;
+  border-radius: .7rem;
+  box-sizing: border-box;
+}
+button[type="submitz"]{
+  width: 100%;
+  width: 8rem;
+  height: 3rem;
+  padding: .5rem;
+  margin: 1rem 11rem ;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.5rem;
+  border: 1px solid #48a009;
+  border-radius: .3rem;
+  background: #6d9451;
+  box-shadow: 1px 1px 3px #333333;
+}
+button[type="submitz"]:hover {cursor: pointer; border: 1px solid #336112; border-radius: .6rem; background: #265203;}
+
+.text_field {  width: 100%; align-items: center; box-sizing: border-box;}
+
+.text_field label {
+  text-align: center;
+  width: 100%;
+  padding: 0 5.6rem; 
+  color: #000000;
+  font-size: 1.2rem;
+  pointer-events: none; /*  ป้องกันไม่ให้เกิดการคลิกใด ๆ และไม่แสดง mouse cursor
+                            auto เริ่มต้นการทำงานใหม่ของคำสั่ง pointer-events คือเปลี่ยนเป็นคลิกได้นั่นเอง
+                            inherit กำหนดรูปแบบตาม element ที่ครอบตัวเองอยู่ จะคลิกได้หรือไม่ได้ขึ้นอยู่กับ element ที่ครอบตัวเองอยู่ */
+}
+/*++++++++++++++++ page-login ++++++++++++++++++*/
+
+/*---------------- Logo&search ----------------*/
+
+.search-logo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 279px 1fr;
+  color: #fff;
+  clear: left;
+  float: left;
+}
+.search-logo img{margin: 5% 0;}
+.search-logo form {margin: 8% 0 5% 42%;}
+.search-logo input[type="searchs"] {
+width: 284px;
+height: 40px;
+padding: 12px 8px;                /*ในกรอบ input*/
+border: 1px solid #ccc;
+font-size: 1rem;
+border-radius: 10px;
+box-sizing: border-box;
+}
+.search-logo button[type="submits"] {
+  width: 6rem;
+  height: 2rem;
+  padding: .2rem;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border: 1px solid #48a009;
+  border-radius: 5px;
+  background: #6d9451;
+  box-shadow: 1px 1px 3px #333333;
+  
+}
+.search-logo button[type="submits"]:hover {
+  width: 6rem;
+  height: 2.2rem;
+  padding: .3rem;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border: 1px solid #336112;
+  border-radius: 10px;
+  background: #265203;
+  box-shadow: 1px 1px 3px #333333;
+}
+/*---------------- Logo&search ----------------*/
+
+/*----------------- show-herb -----------------*/
+.content-show{float: left; width: 100%; height: auto; margin: 30px 0; border-radius: 20px;}
+
+.content-show .content-gird {
+  float: left;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  grid-gap: 0.5rem;
+}
+.content-item {
+  width: 100%;
+  height: 31rem; /* 500px */
+  margin: 0.5rem 0;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #265203;
+  border-radius: 10px;
+  box-shadow: 1px 4px 4px #686666;
+  transition: .3s ease-in-out;
+}
+.brief-details{
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: 1fr 150px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.content-item h2 {
+  margin: 5px 20px;
+  padding: 5px;
+  background: #366813;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 18px;
+}
+.brief-details img {
+  width: 100%;
+  border-radius: 15px;
+  margin: 5px 0;
+  text-align: center;
+  overflow: hidden;
+}
+.brief-details p {
+  margin: 5px;
+  padding: 5px 15px;
+  font-size: .9rem;
+  text-align: left;
+}
+.content-item a {
+  /* margin-bottom: 30px; */
+  text-decoration: none;
+  color: #3700ff;
+  font-size: 16px;
+}
+.txt-align{
+  margin-right: 0.5rem;
+  justify-self: flex-end;
+  align-self: flex-end;
+  float: right;
+}
+/*-------------- show-herb-hover --------------*/
+.content-item:hover .brief-details{
+  background-color: #265203; 
+  margin: 0;
+  border-radius: 10px;
+}
+
+.content-item:hover .brief-details p {
+  margin: 5px;
+  padding: 5px 15px;
+  font-size: .9rem;
+  color: #ffffff;
+  text-align: left;
+}
+.content-item:hover a{margin-top: 1rem; justify-self: flex-end; align-self: flex-end;}
+/*-------------- show-herb-hover --------------*/
+/*----------------- show-herb -----------------*/
+
+/*-------------- footer  --------------*/
+footer {
+  float: left;
+  margin-top: 3%;
+  width: 100%;
+  height: auto;
+  background-color: #93b578;
+}
+.brief-footer{
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #275203;
+  border-radius: 20px;
+}
+.brief-footer h1{
+  width: 100%;
+  padding-top: 10px;
+  text-align: left;
+  font-size: .9rem;
+  color: #fff;
+}
+.brief-footer p{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 12px;
+  color: #fff;
+}
+/*-------------- footer  --------------*/
+/*++++++++++++++++ page-index ++++++++++++++++++*/
+
+
+
+
+
+/*-------------- display --------------*/
+@media only screen and (max-width: 1280px) {.img-grid-item {margin-left: .3rem;} .edit-grid{margin-left: 5rem;}}
+@media only screen and (max-width: 850px) {
+  .search-logo form {width: 100%; margin-top: 12%; grid-template-columns: 1fr 1fr; position: relative; transform: translateX(-20%);}
+  .content-show .content-gird {width: 100%; grid-template-columns: 1fr 1fr 1fr; justify-items: center; padding: 0 0.5rem;}
+  .content-item {width: 97%;}
+    /*------------ start-detail  ----------*/
+  .header-herb-grid {display: grid; grid-template-columns: 1fr;}
+  .header-herb-item{display: grid; grid-template-columns: 1fr; justify-items: center; align-items: center;}
+  .header-herb-item img {max-width: 100%; margin: 0 auto; justify-items: center; align-items: center; }
+    
+  .header-herb-item .name-details{width: 95%;}
+    
+  .herb-details h1{margin-left: 2.5%;}
+  .herb-details .bg-details {width: 95%; margin-left: 2.5%;}
+  .herb-details img{ justify-items: center; align-items: center; margin-top: 4%;}
+  /*------------- end-detail  -----------*/
+
+  /*--------------- admin  --------------*/
+  .edit-grid{margin-left: 4rem;}
+  /*--------------- admin  --------------*/
+
+  /*++++++++++++++++ page-admin3 +++++++++++++++++*/
+  .container-admin{padding: 0 3rem;}
+  .star-grid{grid-template-columns: repeat(4,1fr);}
+  .img-grid-item {margin-left: 1.5rem;}
+  /*++++++++++++++++ page-admin3 +++++++++++++++++*/
+}
+/*-------------- tablat --------------*/
+
+@media only screen and (max-width: 768px) {
+  .search-logo {margin: 0; text-align: center;}
+  .search-logo img {margin: 0.5rem;}
+  .search-logo form {width: 100%; margin-top: 12%; grid-template-columns: 1fr 1fr; position: relative; transform: translateX(-32%); }
+  .search-logo input[type="searchs"] {width: 200px;  height: 40px; margin-bottom: 0.2rem;}
+  .search-logo button[type="submits"] {width: 96px; height: 35px;}
+
+  .content-show .content-gird {width: 100%; grid-template-columns: 1fr 1fr 1fr; justify-items: center; padding: 0 0.5rem;}
+  .content-item {width: 100%;}
+
+  .brief-footer{ width: 90%; margin: 15px 0; position: relative; transform: translateX(5%); justify-items: center;}
+}
+
+
+/*-------------- moblie --------------*/
+@media only screen and (max-width: 480px) {
+  /*------------- start-login -------------*/
+  .center {width: 345px; height: 521px;}
+  .center .text_field input {width: 280px; height: 50px; margin: 0 32px;}
+  button[type="submitz"]{width: 100%; width: 144px; margin: 1rem 100px;}
+  /*-------------- end-login -------------*/
+
+  /*------------- start-index  -----------*/
+  ul.menu li {height: 2rem; margin-top: 15px;}
+
+  .search-logo {grid-template-columns: 1fr; text-align: center; padding-left: 0;}
+  .search-logo form {width: 100%; margin: 0; position: relative; transform: translateX(2%);}
+  .search-logo input[type="searchs"] {width: 190px;  height: 40px; margin-bottom: 0.2rem;}
+  .search-logo button[type="submits"] {width: 96px; height: 35px;}
+
+  .content-show .content-gird{clear: left; width: 100%; grid-template-columns: 1fr; justify-items: center; padding: 0;}
+  .content-item {width: 85%;}
+
+  .brief-footer{ width: 80%; margin: 15px 0; position: relative; transform: translateX(12%); justify-items: center;}
+  /*------------- end-index  ------------*/
+
+  /*------------ start-detail  ----------*/
+  .header-herb-grid {display: grid; grid-template-columns: 1fr;}
+  .header-herb-item{display: grid; grid-template-columns: 1fr; justify-items: center; align-items: center;}
+  .header-herb-item img {margin-bottom: 2%;}
+  
+  .header-herb-item .name-details{width: 95%;}
+  
+  .herb-details h1{margin-left: 2.5%; width: 95%; padding-top: 2.5%; } /**/
+  .herb-details .bg-details {width: 95%; margin-left: 2.5%; padding: .5rem 1rem;}
+  .herb-details img{ justify-items: center; align-items: center; margin-top: 4%;}
+  /*------------- end-detail  -----------*/
+
+  /*--------------- admin  --------------*/
+  .edit-grid{ margin-left: 0; grid-template-columns: 1fr 1fr;}
+  .edit-grid-item{ width: 100%;}
+  .btn-edit-delete{margin: 0 0.5rem .5rem .5rem;}
+  /*--------------- admin  --------------*/
+
+   /*++++++++++++++++ page-admin3 +++++++++++++++++*/
+   .container-admin{padding: 0 .5rem;}
+   .star-grid{grid-template-columns: repeat(1,1fr);}
+   .img-grid-item {margin-left: 1rem;  }
+   /*++++++++++++++++ page-admin3 +++++++++++++++++*/
+}
+/*-------------- display --------------*/
+
+
+
+
+

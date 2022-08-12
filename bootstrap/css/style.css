@@ -1,0 +1,621 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* รีเซ็ตระยะห่าง */
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: 'THSarabunNew', sans-serif;
+  background-color: #ffffff;
+  /* background-image: linear-gradient(120deg, #cfdfc3, #fff); */
+  height: 100vh;
+}
+
+/*-------------- formEdit -------------*/
+
+.size-imgShow {
+  max-width: 350px;
+}
+
+/*-------------- formEdit -------------*/
+
+
+/*-------------- CardHerb -------------*/
+
+
+a {
+  text-decoration: none;
+}
+
+/* Card Styles */
+
+.card-sl {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.card-size {
+  height: 150px;
+  width: 254px;
+  overflow: hidden;
+}
+
+.card-image img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 8px 8px 0px 0;
+}
+
+
+
+.card-heading {
+  font-size: 18px;
+  font-weight: bold;
+  background: #fff;
+  padding: 10px 15px;
+}
+
+.card-text {
+  padding: 0 15px;
+  background: #fff;
+  font-size: 14px;
+  color: #636262;
+}
+
+.card-button {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #557C55;
+  color: #fff;
+  border-radius: 0 0 8px 8px;
+}
+
+.card-button:hover {
+  text-decoration: none;
+  background-color: #A6CF98;
+  color: #fff;
+
+}
+
+
+.px200 {
+  height: 175px;
+  overflow: hidden;
+}
+
+/*-------------- CardHerb -------------*/
+
+/*------------- formLogin -------------*/
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  width: 512px;
+  height: 512px;
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 35%;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.bg-btn-herb {
+  background-color: #366813;
+  color: #fff;
+}
+
+.bg-btn-herb:hover {
+  background-color: #4e941c;
+  color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Add Zoom Animation */
+.animate {
+  animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/*------------- formLogin -------------*/
+
+/*------------- indexShow -------------*/
+.bg-herb-nav {
+  background-color: #366813 !important;
+  color: #fff;
+}
+
+.bg-herb-green {
+  background-color: #93b578 !important;
+  color: #fff;
+}
+
+/*------------- indexShow -------------*/
+
+/*-------------- listherb --------------*/
+.sizeimg {
+  width: auto;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+.sizeimgfeed {
+  width: auto;
+  height: 11.8rem;
+  overflow: hidden;
+  position: relative;
+}
+
+/* .sizeimg img{transform: translateY(-10rem); position: absolute;} */
+#myImg {
+  cursor: pointer;
+}
+
+#feedImg {
+  cursor: pointer;
+}
+
+.feedbox{
+  margin: 1rem;
+  padding: 0 .5rem;
+  width: 13rem;
+  height: 3rem;
+  background-color: #7aa167;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.feedfix{
+  color: #ffffff;
+  font-size: 3rem;
+}
+.feedfont{
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+/*-------------- listherb --------------*/
+
+
+/*-------------- Feedback --------------*/
+.rating {
+  --dir: right;
+  --fill: gold;
+  --fillbg: rgba(100, 100, 100, 0.15);
+  --heart: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.328l-1.453-1.313q-2.484-2.25-3.609-3.328t-2.508-2.672-1.898-2.883-0.516-2.648q0-2.297 1.57-3.891t3.914-1.594q2.719 0 4.5 2.109 1.781-2.109 4.5-2.109 2.344 0 3.914 1.594t1.57 3.891q0 1.828-1.219 3.797t-2.648 3.422-4.664 4.359z"/></svg>');
+  --star: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.25l-6.188 3.75 1.641-7.031-5.438-4.734 7.172-0.609 2.813-6.609 2.813 6.609 7.172 0.609-5.438 4.734 1.641 7.031z"/></svg>');
+  --stars: 5;
+  --starsize: 3rem;
+  --symbol: var(--star);
+  --value: 1;
+  --w: calc(var(--stars) * var(--starsize));
+  --x: calc(100% * (var(--value) / var(--stars)));
+  block-size: var(--starsize);
+  inline-size: var(--w);
+  position: relative;
+  touch-action: manipulation;
+  -webkit-appearance: none;
+}
+[dir="rtl"] .rating {
+  --dir: left;
+}
+.rating::-moz-range-track {
+  background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
+  block-size: 100%;
+  mask: repeat left center/var(--starsize) var(--symbol);
+}
+.rating::-webkit-slider-runnable-track {
+  background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
+  block-size: 100%;
+  mask: repeat left center/var(--starsize) var(--symbol);
+  -webkit-mask: repeat left center/var(--starsize) var(--symbol);
+}
+.rating::-moz-range-thumb {
+  height: var(--starsize);
+  opacity: 0;
+  width: var(--starsize);
+}
+.rating::-webkit-slider-thumb {
+  height: var(--starsize);
+  opacity: 0;
+  width: var(--starsize);
+  -webkit-appearance: none;
+}
+.rating, .rating-label {
+  display: block;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+.rating-label {
+  margin-block-end: 1rem;
+}
+
+/* NO JS */
+.rating--nojs::-moz-range-track {
+  background: var(--fillbg);
+}
+.rating--nojs::-moz-range-progress {
+  background: var(--fill);
+  block-size: 100%;
+  mask: repeat left center/var(--starsize) var(--star);
+}
+.rating--nojs::-webkit-slider-runnable-track {
+  background: var(--fillbg);
+}
+.rating--nojs::-webkit-slider-thumb {
+  background-color: var(--fill);
+  box-shadow: calc(0rem - var(--w)) 0 0 var(--w) var(--fill);
+  opacity: 1;
+  width: 1px;
+}
+[dir="rtl"] .rating--nojs::-webkit-slider-thumb {
+  box-shadow: var(--w) 0 0 var(--w) var(--fill);
+}
+
+
+:root {
+  --martinique: #323357;
+  --mariner: #2A5BDA;
+  --bright-sun: #FCCC4D;
+  --zircon: #F5F8FF;
+  --black: #000000;
+  --white: #ffffff;
+  --mercury: #E5E5E5;
+  --comet: #595B71;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.cards {
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 3rem;
+  text-align: center;
+  filter: drop-shadow(0.1rem 1rem 0.2rem rgba(0, 0, 0, 0.3));
+}
+
+.card-titles {
+  -webkit-text-stroke: 1px var(--black);
+  -webkit-text-fill-color: var(--martinique);
+  font-size: 3.2rem;
+  font-weight: bold;
+  filter: drop-shadow(0.1rem 0.25rem 0.1rem rgba(0, 0, 0, 0.5));
+}
+
+.card-rating {
+  margin: 2rem 0 1rem;
+  background-color: var(--zircon);
+  border-radius: 4rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+  grid-gap: 1.2rem;
+}
+
+.ratings img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.card-rating-text {
+  font-size: 1.6rem;
+  color: var(--martinique);
+  font-weight: 400;
+}
+
+.rating-count {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--comet);
+}
+
+.rating-percents {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 1.5rem;
+}
+
+.rating-percent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rating-no {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--mariner);
+}
+
+.rating-progress {
+  margin: 0 .8rem;
+  background-color: var(--zircon);
+  border-radius: 1.8rem;
+  width: 28rem;
+  height: 2rem;
+  position: relative;
+}
+
+.rating-progress::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--bright-sun);
+  border-radius: 1.8rem;
+}
+
+.rating-percent:nth-child(1) .rating-progress::before {
+  width: var(--ratefive);
+}
+
+.rating-percent:nth-child(2) .rating-progress::before {
+  /* width: 9%; */
+  width: calc(1* var(--ratefour)); 
+}
+
+.rating-percent:nth-child(3) .rating-progress::before {
+  /* width: 4%; */
+  width: calc(1* var(--ratethree));
+}
+
+.rating-percent:nth-child(4) .rating-progress::before {
+  /* width: 2%; */
+  width: calc(1* var(--ratetwo));
+}
+
+.rating-percent:nth-child(5) .rating-progress::before {
+  /*  width: 1%; */
+  width: calc(1* var(--rateone));
+}
+
+.rating-percent-no {
+  font-size: 1.8rem;
+  color: var(--martinique);
+  font-weight: 400;
+}
+
+.card-footer-text {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  color: var(--mariner);
+  font-weight: 400;
+}
+
+/*-------------- Feedback --------------*/
+
+
+.bg-777 {
+  background-color: #f8f7f7;
+}
+
+/*-------------- Feedback --------------*/
+
+
+
+
+
+/*-------------- display --------------*/
+
+
+
+
+
+/*-------------- display --------------*/
+@media only screen and (max-width: 1280px) {
+  center {
+    height: auto;
+  }
+
+  .imglogo img {
+    width: 25%;
+    height: 25%;
+  }
+
+}
+
+/*-------------- tablat-whidth --------------*/
+
+@media only screen and (max-width: 992px) {
+  .sizeimgfeed{height: 20rem !important;}
+
+  .modal-content{width: 75%;}
+
+  .col-herb {
+    flex: 0 0 auto;
+    width: 16%;
+  }
+
+  .d-tablet {
+    display: none;
+  }
+
+  .card-size {
+    height: 150px;
+    width: 168px;
+  }
+
+}
+
+/*-------------- tablat --------------*/
+
+@media only screen and (max-width: 768px) {
+  .sizeimgfeed{height: auto !important;}
+  .modal-content{width: 75%;}
+
+  .imglogo img {
+    width: 20%;
+    height: 100%;
+  }
+
+  .d-tablet {
+    display: none;
+  }
+
+  .col-herb {
+    flex: 0 0 auto;
+    width: 250px;
+  }
+
+  .card-size {
+    width: 180px;
+  }
+}
+
+
+/*-------------- moblie --------------*/
+@media only screen and (max-width: 480px) {
+  .fontlogin{font-size: 1.5rem;}
+  .modal-content{width: 90%;}
+  .d-tablet {
+    display: none;
+  }
+
+  .d-mobile {
+    display: none;
+  }
+
+  .imglogo img {
+    width: 35%;
+    height: 100%;
+  }
+
+  .card-size {
+    height: 170px;
+    width: auto;
+  }
+
+  .px200 {
+    height: 145px;
+  }
+
+/*----------- feedRate --------------*/
+  .card-titles{font-size: 2rem;}
+  .card-rating{padding: 0.25rem;}
+  .cards{padding: 0.25rem 0.5rem;}
+  .ratings img{width: 1.5rem; height: 2rem;}
+  .card-rating-text{font-size: 1.2rem; padding-right: 10px;}
+  .rating-no{font-size: .75rem; width: 65px;} 
+  .rating-percent-no{font-size: 1rem; width: 56px;}
+/*----------- feedRate --------------*/
+
+  center {
+    height: auto;
+  }
+
+  .feedbox{
+    transform: translateX(3rem);
+    padding: 0 .5rem;
+    width: 9rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+  }
+  .feedfix{
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
+  }
+  .feedfont{
+    padding-bottom: 4rem;
+    font-size: 1rem;
+  }
+}
+
+/*-------------- display --------------*/
